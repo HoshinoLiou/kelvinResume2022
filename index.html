@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelvin Liou</title>
+
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/styles/bootstrap.min.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <!-- <div class="loadingPage">
+        <div class="show1"></div>
+        <div class="show2"></div>
+    </div> -->
+    <div id="app">
+        <header>
+            <div class="container">
+                <div class="header_inner">
+                    <div class="row">
+                        <!-- <div class="logo col-3"> -->
+                            <!-- <p style="font-size: 12px; margin-bottom:2px; font-weight:300;">Resume</p>
+                            <p>KELVIN.</p> -->
+                            <!-- <router-link v-cloak="'KELVIN.'" to="/" style="text-decoration: none; color:black" replace> -->
+                            <!-- </router-link> -->
+                        <!-- </div> -->
+                        <div class="col-3">
+                            <div>
+                                <svg height='90px' width='209px'>
+                                    <!-- 嘗試文字 -->
+                                    <polyline points="8,0 23,0 23,20 36,0 53,0 33,30 53,60 36,60 23,40 23,60 8,60 8,0"
+                                        class="anime2" fill="transparent" stroke="#ff7474" stroke-width="2"
+                                        stroke-linejoin='round' stroke-linecap='round' />
+                                    <polyline
+                                        points="46,0 91,0 91,15 61,15 61,22.5 91,22.5 91,37.5 61,37.5 61,45 91,45 91,60 46,60 46,0"
+                                        class="anime2" fill="transparent" stroke="#ff7474" stroke-width="2"
+                                        stroke-linejoin='round' stroke-linecap='round' />
+                                    <polyline points="82,0 97,0 97,45 127,45 127,60 82,60 82,0" class="anime2"
+                                        fill="transparent" stroke="#ff7474" stroke-width="2" stroke-linejoin='round'
+                                        stroke-linecap='round' />
+                                    <polyline points="101,0 116,0 123.5,40 131,0 146,0 133,60 114,60 101,0 " class="anime2"
+                                        fill="transparent" stroke="#ff7474" stroke-width="2" stroke-linejoin='round'
+                                        stroke-linecap='round' />
+                                    <polyline points="143,0 158,0 158,60 143,60 143,0" class="anime2" fill="transparent"
+                                        stroke="#ff7474" stroke-width="2" stroke-linejoin='round' stroke-linecap='round' />
+                                    <polyline
+                                        points="156,0 171,0 186,35 186,0 201,0 201,60 186,60 171,35 171,60 156,60 156,0"
+                                        class="anime2" fill="transparent" stroke="#ff7474" stroke-width="2"
+                                        stroke-linejoin='round' stroke-linecap='round' />
+    
+                                    <polyline points="" class="anime2" fill="transparent" stroke="#68EADD"
+                                        stroke-width="3" />
+    
+                                    <text x="6" y="75" fill="transparent" class="anime3"
+                                        style="font-size:10px; font-weight:300;">Rev. 2022 in Spring</text>
+                                </svg>
+                            </div>
+                        </div>
+                        <nav class="col-9">
+                            <ul>
+                                <li>
+                                    <!-- <router-link to="/" v-text="'Home'" replace></router-link> -->
+                                    <router-link to="/" v-text="'Home'"></router-link>
+                                </li>
+                                <li>
+                                    <!-- <router-link to="/profile" v-text="'Profile'" replace></router-link> -->
+                                    <router-link to="/profile" v-text="'Profile'"></router-link>
+                                </li>
+                                <li>
+                                    <!-- <router-link to="/skill" v-text="'Skill'" replace></router-link> -->
+                                    <router-link to="/skill" v-text="'Skill'"></router-link>
+                                </li>
+                                <li>
+                                    <!-- <router-link to="/experience" v-text="'Experience'" replace></router-link> -->
+                                    <router-link to="/experience" v-text="'Experience'"></router-link>
+                                </li>
+                                <li>
+                                    <!-- <router-link to="/portfolio" v-text="'Portfolio'" replace></router-link> -->
+                                    <router-link to="/portfolio" v-text="'Portfolio'"></router-link>
+                                </li>
+                                <!-- <li>
+                                    <router-link to="/contact" replace>Contact</router-link>
+                                </li> -->
+                            </ul>
+                        </nav>
+                        <div class="burgerArea col-9">
+                            <input id="burgerArea_button" type="checkbox">
+                            <label for="burgerArea_button" class="burgerButton">
+                                <div class="burgerButton_line top"></div>
+                                <div class="burgerButton_line middle"></div>
+                                <div class="burgerButton_line bottom"></div>
+                            </label>
+                            <div class="burgerMenu">
+                                <ul>
+                                    <li>
+                                        <router-link to="/" v-text="'Home'"></router-link>
+                                    </li>
+                                    <li>
+                                        <router-link to="/profile" v-text="'Profile'"></router-link>
+                                    </li>
+                                    <li>
+                                        <router-link to="/skill" v-text="'Skill'"></router-link>
+                                    </li>
+                                    <li>
+                                        <router-link to="/experience" v-text="'Experience'"></router-link>
+                                    </li>
+                                    <li>
+                                        <router-link to="/portfolio" v-text="'Portfolio'"></router-link>
+                                    </li>
+                                    <!-- <li>
+                                        <router-link to="/contact" replace>Contact</router-link>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="spaceArea col-1"></div>
+                    <div class="pageTitle col-11 col-sm-11 col-md-10 col-lg-10 col-xl-10">
+                        <h1>{{nowPage}}</h1>
+                        <p>{{sentence[nowPage]}}</p>
+                    </div>
+                </div>
+                <div class="main_inner">
+                    <div class="row">
+                        <!-- <div class="spaceArea col-1 col-sm-1 col-md-2 col-lg-2 col-xl-2"></div> -->
+                        <div class="spaceArea col-1"></div>
+                        <div class="contentArea col-11 col-sm-11 col-md-10 col-lg-10 col-xl-10">
+                            <router-view></router-view>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer_inner">
+                <div id="copyright" class="col-12">
+                    © 2022 Kelvin.Liou All Rights Reserved.
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="./dist/bundle.js"></script>
+</body>
+
+
+</html>
